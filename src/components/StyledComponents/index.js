@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -26,11 +26,17 @@ const TomatoButton = styled(Button)`
   border-color: tomato;
 `;
 
-const Styles = () => <Fragment />
+const Link = ({ className, children, href }) => (
+  <a className={className} href={href}>
+    {children}
+  </a>
+);
 
-Styles.Title = Title;
-Styles.Wrapper = Wrapper;
-Styles.Button = Button;
-Styles.TomatoButton = TomatoButton;
+const StyledComponents = () => <div />;
 
-export default Styles;
+StyledComponents.Title = Title;
+StyledComponents.Wrapper = Wrapper;
+StyledComponents.Button = Button;
+StyledComponents.Link = Link;
+
+export default StyledComponents;

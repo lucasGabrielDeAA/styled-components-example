@@ -1,3 +1,3 @@
-import Styles from './Styles';
+import StyledComponents from './StyledComponents';
 
-export { Styles };
+export { StyledComponents };
