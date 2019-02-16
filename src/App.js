@@ -2,15 +2,16 @@ import React from 'react';
 
 import './App.css';
 
-import { Styles } from './components';
+import { StyledComponents } from './components';
 
 const App = () => (
-  <Styles.Wrapper>
-    <Styles.Title>Hello World, this is my first styled component!</Styles.Title>
+  <StyledComponents.Wrapper>
+    <StyledComponents.Title>Hello World, this is my first styled component!</StyledComponents.Title>
 
-    <Styles.Button>Normal Button</Styles.Button>
-    <Styles.TomatoButton>Tomato Button</Styles.TomatoButton>
-  </Styles.Wrapper>
+    <StyledComponents.Button>Normal Button</StyledComponents.Button>
+
+    <StyledComponents.Link href="/">This is a link</StyledComponents.Link>
+  </StyledComponents.Wrapper>
 );
 
 export default App;
