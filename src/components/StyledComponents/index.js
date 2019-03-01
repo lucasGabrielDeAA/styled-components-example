@@ -21,13 +21,8 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-const TomatoButton = styled(Button)`
-  color: tomato;
-  border-color: tomato;
-`;
-
-const Link = ({ className, children, href }) => (
-  <a className={className} href={href}>
+const Link = ({ className, children, href }, props) => (
+  <a className={className} href={href} { ...props }>
     {children}
   </a>
 );
