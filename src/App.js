@@ -10,7 +10,7 @@ const App = () => (
 
     <StyledComponents.Button>Normal Button</StyledComponents.Button>
 
-    <StyledComponents.Link href="/">This is a link</StyledComponents.Link>
+    <StyledComponents.Link href="https://github.com/lucasGabrielDeAA/styled-components-example">GitHub repository</StyledComponents.Link>
   </StyledComponents.Wrapper>
 );
 
